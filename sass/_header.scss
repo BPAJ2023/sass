@@ -1,4 +1,16 @@
+.header{
+    position: relative;
+    display: block;
+}
 .header__image{
     width: 100%;
     height: 100%;
+}
+.header__btn{
+    position: relative;
+    top: 50%;
+    left: 60%;
+}
+.header__btn--change-font{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
