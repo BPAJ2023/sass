@@ -1,1 +1,1 @@
-*{padding:0;margin:0;box-sizing:border-box}body{display:flex}/*# sourceMappingURL=style.css.map */
+*{padding:0;margin:0;box-sizing:border-box}.page{display:flex;flex-direction:column;align-content:flex-start;justify-content:flex-start}.page .page__header,.page .header{flex-basis:10vh;background-color:#825;position:relative}.page .page__menu{flex-basis:10pvh;background-color:#779}.page .page__articules{flex-basis:70vh;background-color:#32e}.page .page__footer{flex-basis:20vh;background-color:#325}.header__image{width:100%;height:100%}/*# sourceMappingURL=style.css.map */
