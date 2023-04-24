@@ -1,0 +1,21 @@
+$fontSize: 1,5rem;
+$window-width:(
+    small: (min-width: 480px),
+    medium: (min-width: 1028px)
+    large: (min-width: 1800px)
+);
+
+@function fonts-width($window-width: null, $fontSize){
+    @if(#{$window-width} == number){ 
+        @error "wpisz tekst dla" + $window-width;
+    } @else if (#{$window-width} != $window-width){
+        @error "wpisz poprawny parametr dla" + $window-width;
+    } @else if ($window-width == small){
+        $size: $fontSize * 4;
+        @return $size;
+    } @else if ($window-width == medium){
+        @return $fontSize * 2;
+    } @else if ($window-width == large){
+        @return $fontSize;
+    }
+    }
