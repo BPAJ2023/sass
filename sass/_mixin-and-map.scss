@@ -1,0 +1,16 @@
+$window-width:(
+    small: (min-width: 480px),
+    medium: (min-width: 1028px),
+    large: (min-width: 1800px),
+);
+
+@mixin media_queres($width){
+    $size: map-get($window-width, $width);
+    @if($size){
+        @media #{$size} {
+            @content
+        };
+    } @else {
+        @error '"#{$witth}" - to nieprawidłowa wartość'
+    };
+}
